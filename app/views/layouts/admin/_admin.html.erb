@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dairyland</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <div class="content-wrapper">
+  <!-- Navigation-->
+          <%= render 'layouts/admin/admin_navbar' %>
+  
+          <%= yield %>
+    <!-- /.content-wrapper-->
+          <%= render 'layouts/admin/admin_footer' %>
+          
+          <%= render 'layouts/admin/admin_logout_modal' %>
+    <!-- Logout Modal-->
+    
+      </div>
+  </body>
+
+</html>
